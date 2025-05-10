@@ -1,0 +1,55 @@
+@use "theme";
+
+.app {
+  display: flex;
+  justify-content: center;
+
+  .game {
+    margin-top: 5px;
+
+    .table {
+      margin-top: 5px;
+    }
+  }
+}
+
+.table {
+  display: flex;
+
+  .foundation-container {
+    margin-right: 10px;
+
+    > *:not(:last-child) {
+      margin-bottom: theme.$gap_zones_foundations;
+    }
+  }
+
+  .main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .discovery-container {
+      display: flex;
+      margin-bottom: theme.$gap_containers_discovery_vertical-stacks;
+
+      .deck {
+        margin-right: theme.$gap_zones_discovery;
+      }
+
+      .discovery {
+        flex-grow: 1;
+        display: flex;
+      }
+    }
+
+    .pile-row {
+      flex-grow: 1;
+      display: flex;
+
+      > *:not(:last-child) {
+        margin-right: theme.$gap_zones_vertical-stacks;
+      }
+    }
+  }
+}

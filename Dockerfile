@@ -1,0 +1,19 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm config set registry https://registry.npmjs.org/
+RUN npm config set strict-ssl false
+RUN npm install --force --loglevel verbose
+
+RUN npm i -g serve
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD [ "serve", "-s", "dist" ]

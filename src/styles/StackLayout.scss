@@ -1,0 +1,62 @@
+@use "theme";
+
+.zone {
+  position: relative;
+}
+
+.pile-base {
+  position: absolute;
+  height: 168px;
+  width: 118px;
+  border: 2px gray dashed;
+  border-radius: 11px;
+}
+
+.card-stack {
+  opacity: 0.999;
+  border-radius: theme.$border-radius_card;
+}
+
+.deck > .playing-card {
+  position: absolute;
+}
+
+.vertical-stack {
+  > .card-stack {
+    .card-stack {
+      margin-top: -174 + theme.$gap_stacked_vertical;
+    }
+  }
+}
+
+.horizontal-stack {
+  > .card-stack {
+    .card-stack {
+      display: inline-block;
+      margin-left: -125 + theme.$gap_stacked_horizontal;
+    }
+  }
+}
+
+.foundation {
+  &.clubs,
+  &.spades {
+    color: #202020;
+  }
+  &.diamonds,
+  &.hearts {
+    color: #bb0000;
+  }
+
+  .suit-icon {
+    position: absolute;
+    font-size: xx-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .playing-card {
+    position: absolute;
+  }
+}

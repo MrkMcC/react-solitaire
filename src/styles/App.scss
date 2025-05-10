@@ -1,0 +1,26 @@
+@use "theme";
+
+#root,
+body {
+  background-color: #003000;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.playing-card {
+  border: 1px solid gray;
+  border-radius: theme.$border-radius_card;
+}
+
+.card-sized {
+  height: 171px;
+  width: 122px;
+}
+
+.card-width {
+  width: 122px;
+}
+
+.pile-base {
+  border: 2px gray dashed;
+}
