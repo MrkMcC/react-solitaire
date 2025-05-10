@@ -123,7 +123,9 @@ function App() {
     <div className="app">
       {gameWon() && <ReactConfetti />}
       <div className="game">
-        <NewGameBtn onClick={initialiseNewGame} />
+        <div className="top-bar">
+          <NewGameBtn onClick={initialiseNewGame} />
+        </div>
         <div className="table">
           <div className="foundation-container">{foundationElements}</div>
           <div className="main-container">

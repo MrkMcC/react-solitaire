@@ -6,7 +6,7 @@ $_medium-gap: 10px;
 $border-radius_card: 11px;
 
 //gaps between zone-containers
-$gap_containers_discovery_vertical-stacks: $_small-gap;
+$gap_containers_discovery_vertical-stacks: $_medium-gap;
 
 //gaps between zones
 $gap_zones_foundations: $_medium-gap;
@@ -16,3 +16,28 @@ $gap_zones_vertical-stacks: $_medium-gap;
 //gaps between stacked cards
 $gap_stacked_horizontal: 27px;
 $gap_stacked_vertical: 27px;
+
+$bg_dark-green: #003000;
+$bg_bright-green: #205020;
+
+.new-game-btn {
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.25em;
+  border-radius: 5px;
+  background-color: $bg_bright-green;
+  border-left: 0.1em white solid;
+  border-top: 0.1em white solid;
+  border-right: 0.15em black solid;
+  border-bottom: 0.15em black solid;
+  color: white;
+
+  &:hover {
+    background-color: $bg_dark-green;
+    border-left: 0.15em black solid;
+    border-top: 0.15em black solid;
+    border-right: 0.1em white solid;
+    border-bottom: 0.1em white solid;
+    color: grey;
+  }
+}
