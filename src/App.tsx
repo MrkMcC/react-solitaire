@@ -36,6 +36,12 @@ function App() {
     setTable(CardService.CreateInitialisedTable());
   };
 
+  const handleDeckDrop = (cardId: string, origin: string) => {
+    const droppedStack = ZoneHelper.GetStack(cardId, table[origin]);
+    if (zones.deck.length === 0 && droppedStack.length === 1)
+      moveCard(cardId, origin, Constants.ZONE.DECK);
+  };
+
   const handleSortingColumnDrop = (
     cardId: string,
     origin: string,
@@ -122,7 +128,11 @@ function App() {
           <div className="foundation-container">{foundationElements}</div>
           <div className="main-container">
             <div className="discovery-container">
-              <Deck hasCards={zones.deck.length > 0} onClick={handleDiscover} />
+              <Deck
+                cards={zones.deck}
+                onClick={handleDiscover}
+                onCardDrop={handleDeckDrop}
+              />
               <Discovery cards={table[Constants.ZONE.DISCOVERY]} />
             </div>
             <div className="pile-row">{columnElements}</div>

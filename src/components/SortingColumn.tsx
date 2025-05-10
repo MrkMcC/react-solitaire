@@ -8,8 +8,6 @@ interface Props {
   onCardDrop: (cardId: string, origin: string, target: string) => void;
 }
 
-//TODO Draggable logic
-
 const SortingColumn = ({ zoneId, cards = [], onCardDrop }: Props) => {
   return (
     <DropZone
