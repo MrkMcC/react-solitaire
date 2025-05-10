@@ -47,7 +47,7 @@ function App() {
 
     const targetCard = ZoneHelper.GetTopCard(table[target]);
     if (
-      targetCard !== undefined &&
+      targetCard === undefined ||
       CardService.IsDraggable([targetCard, ...droppedStack])
     ) {
       droppedStack.forEach((droppedCard) => {
