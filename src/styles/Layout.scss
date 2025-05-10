@@ -33,12 +33,8 @@
       display: flex;
       margin-bottom: theme.$gap_containers_discovery_vertical-stacks;
 
-      .deck {
-        margin-right: theme.$gap_zones_discovery;
-      }
-
       .discovery {
-        margin-left: 5px;
+        margin-left: theme.$gap_zones_discovery;
         flex-grow: 1;
         display: flex;
       }

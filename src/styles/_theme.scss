@@ -1,5 +1,6 @@
 //private units
 $_small-gap: 5px;
+$_medium-gap: 10px;
 
 //general units
 $border-radius_card: 11px;
@@ -8,9 +9,9 @@ $border-radius_card: 11px;
 $gap_containers_discovery_vertical-stacks: $_small-gap;
 
 //gaps between zones
-$gap_zones_foundations: $_small-gap;
-$gap_zones_discovery: $_small-gap;
-$gap_zones_vertical-stacks: $_small-gap;
+$gap_zones_foundations: $_medium-gap;
+$gap_zones_discovery: $_medium-gap;
+$gap_zones_vertical-stacks: $_medium-gap;
 
 //gaps between stacked cards
 $gap_stacked_horizontal: 27px;

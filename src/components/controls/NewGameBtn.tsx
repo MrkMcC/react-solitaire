@@ -4,7 +4,7 @@ interface Props {
 
 const NewGameBtn = ({ onClick }: Props) => {
   return (
-    <button role="button" onClick={onClick}>
+    <button className="new-game-btn" role="button" onClick={onClick}>
       New Game
     </button>
   );
