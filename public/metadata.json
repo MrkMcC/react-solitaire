@@ -4,13 +4,13 @@
   "description": "A basic solitaire game I created as a practice exercise React. It lacks satisfying animations and sounds.",
   "githubRepo": "https://github.com/MrkMcC/react-solitaire",
   "changelog": [
-     {
+    {
       "version": "1.0",
       "features": [
         "Playable on Chrome desktop and mostly free of critical bugs"
       ],
       "bugs": []
     }
-  ]
+  ],
   "roadmap": []
 }
